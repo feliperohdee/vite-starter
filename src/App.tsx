@@ -1,6 +1,6 @@
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { Github, Code2 } from 'lucide-react';
+import { Github, Code2, BookOpen } from 'lucide-react';
 
 const WelcomePage = () => {
 	return (
@@ -16,15 +16,30 @@ const WelcomePage = () => {
 						Build something amazing with React and Tailwind CSS
 						using Vite.
 					</p>
-					<Button
-						asChild
-						className='bg-blue-600 hover:bg-blue-700'
-					>
-						<a href='https://github.com/feliperohdee/vite-starter/README.md'>
-							<Code2 className='mr-2 h-4 w-4' />
-							Get Started
-						</a>
-					</Button>
+					<div className='flex justify-center gap-4'>
+						<Button
+							asChild
+							className='bg-blue-600 hover:bg-blue-700'
+						>
+							<a href='https://github.com/feliperohdee/vite-starter/README.md'>
+								<Code2 className='mr-2 h-4 w-4' />
+								Get Started
+							</a>
+						</Button>
+						<Button
+							asChild
+							variant='secondary'
+						>
+							<a
+								href='https://ui.shadcn.com/docs/components'
+								target='_blank'
+								rel='noopener noreferrer'
+							>
+								<BookOpen className='mr-2 h-4 w-4' />
+								Components Docs
+							</a>
+						</Button>
+					</div>
 				</div>
 
 				{/* Installation Card */}

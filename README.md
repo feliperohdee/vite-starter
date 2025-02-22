@@ -58,15 +58,13 @@ This starter comes with shadcn/ui integration. To add new components:
 yarn add-component [component-name]
 ```
 
+You can browse all available components and their documentation at [shadcn/ui Components](https://ui.shadcn.com/docs/components).
+
 Available components include:
 
 - `button`
 - `card`
-- `dialog`
-- `dropdown-menu`
-- `input`
-- `label`
-- `select`
+- `toast`
 - And many more from the shadcn/ui collection
 
 Example:
@@ -88,18 +86,18 @@ vite-starter/
 ├── src/
 │   ├── assets/         # Assets
 │   ├── components/     # React components
-│   ├── hooks/          # React hooks
-│   ├── libs/           # React libs
-│   ├── styles/         # Global styles
-│   └── App.tsx         # Root component
-│   └── index.css       # Global styles
-│   └── main.tsx        # Entry point
-│   └── vite-env.d.ts    # TypeScript types
-├── public/           # Static assets
-├── index.html        # HTML template
+│   ├── hooks/         # React hooks
+│   ├── libs/          # React libs
+│   ├── styles/        # Global styles
+│   └── App.tsx        # Root component
+│   └── index.css      # Global styles
+│   └── main.tsx       # Entry point
+│   └── vite-env.d.ts  # TypeScript types
+├── public/            # Static assets
+├── index.html         # HTML template
 ├── tailwind.config.js # Tailwind configuration
-├── tsconfig.json     # TypeScript configuration
-└── vite.config.ts    # Vite configuration
+├── tsconfig.json      # TypeScript configuration
+└── vite.config.ts     # Vite configuration
 ```
 
 ## Customization
